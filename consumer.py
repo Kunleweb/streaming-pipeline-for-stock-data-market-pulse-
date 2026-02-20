@@ -1,7 +1,6 @@
 from kafka import KafkaConsumer
 import json
 
-
 consumer = KafkaConsumer(
     'stock_analysis',
     bootstrap_servers = ['localhost:9094'],
@@ -18,3 +17,4 @@ for message in consumer:
     print(f"value(deserialized): {data}")
 consumer.close()
 print("kafka consumer closed")
+
