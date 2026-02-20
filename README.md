@@ -5,7 +5,7 @@ In this lightweight streaming pipeline project; a pipeline that extracts stock d
 All services are containerized with Docker for easy deployment. 
 
 
-![Data Source](https://rapidapi.com/alphavantage/api/alpha-vantage/playground/apiendpoint_55220bb2-8a64-4cde-89e1-87ec00947f57)
+[Data Source](https://rapidapi.com/alphavantage/api/alpha-vantage/playground/apiendpoint_55220bb2-8a64-4cde-89e1-87ec00947f57)
 
 
 ### PIPELINE ARCHITECTURE
