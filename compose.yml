@@ -68,9 +68,6 @@ services:
       - stock_data  
 
 
-
-
-
  # KAFKA SERVICE 
   kafka:
     image: confluentinc/cp-kafka:7.4.10   # Use the Confluent Kafka image (version 7.4.10)
@@ -105,7 +102,6 @@ services:
     networks:
       - stock_data                             # Attach Kafka to shared network for UI and Spark
 
-
  #KAFKA UI SERVICE 
   kafka-ui:
     container_name: kafka-ui                    # Name for the Kafka UI container
@@ -120,8 +116,6 @@ services:
       DYNAMIC_CONFIG_ENABLED: 'true'            # Allow live config changes in the UI
     networks:
       - stock_data                             # Attach UI to same network as Kafka
-
-  
   postgres:
     image: debezium/postgres:17
     container_name: postgres_db
